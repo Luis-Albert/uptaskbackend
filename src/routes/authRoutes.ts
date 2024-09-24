@@ -26,6 +26,4 @@ router.post('/create-account',
     handleInputErrors,
     AuthController.createAccount);
 
-router.get('/users', AuthController.getAllUsers);
-
 export default router;

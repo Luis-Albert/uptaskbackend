@@ -24,9 +24,4 @@ export class AuthController {
             res.status(500).json({ error: 'Hubo un error' })
         }
     }
-
-    static getAllUsers = async (req: Request, res: Response) => {
-        const users = await User.find();
-        res.json(users);
-    }
 }
